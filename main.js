@@ -1,1 +1,1 @@
-console.log("Testing setup");
+(()=>{"use strict";document.getElementById("content").append(function(){const e=document.createElement("div");return e.classList.add("header"),e}())})();
