@@ -17,7 +17,7 @@ function createHeader() {
     const homeItem = document.createElement('li');
     homeItem.classList.add('home');
     homeItem.classList.add('header-item');
-    homeItem.textContent="Home";
+    homeItem.textContent = "Home";
     
     const menuItem = document.createElement('li');
     menuItem.classList.add('menu');
@@ -40,10 +40,32 @@ function createHeader() {
     return header;
 }
 
+function createContainer() {
+    // create root container div
+    const main = document.createElement('div');
+    main.classList.add('container');
+
+    //create image div
+    const image = document.createElement('img');
+    image.src = './images/burger.svg';
+    image.alt = 'burger image';
+
+    //create review div
+    const review = document.createElement('div');
+    review.classList.add('review');
+    review.textContent = 'The best burgers in town! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida quis blandit turpis cursus in hac habitasse platea.';
+
+    main.appendChild(image);
+    main.appendChild(review);
+
+    return main;
+}
+
 function pageLoad() {
     const element = document.getElementById('content');
 
     element.append(createHeader());
+    element.appendChild(createContainer());
 }
 
 export default pageLoad;
