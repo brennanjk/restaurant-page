@@ -53,3 +53,21 @@
     width: 23rem;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu-img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 30px;
+}
+
