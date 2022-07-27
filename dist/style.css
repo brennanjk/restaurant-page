@@ -41,14 +41,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 0rem;
     background-color: #FBE551;
     margin: 6rem 25rem 0;
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     border: double #F6BB0A 1rem;
     border-radius: 30px;
 }
 
-.container > * {
-    width: 25rem;
+.container > img {
+    width: 23rem;
 }
+
