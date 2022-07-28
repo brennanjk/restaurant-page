@@ -25,11 +25,24 @@ function createMenu() {
     image1.classList.add('menu-img');
     image1.src = './images/Classic Cheeseburger.jpg';
     image1.alt = 'Classic Cheesburger. Photo Credit Valeria Boltneva';
+
+    const menuItem2 = document.createElement('div');
+    menuItem2.classList.add('menu-item');
+    const description2 = document.createElement('div');
+    description2.classList.add('item-details');
+    description2.textContent = 'Heart Attack Burger';
+    const image2 = document.createElement('img');
+    image2.classList.add('menu-img');
+    image2.src = './images/Heart Attack Burger.jpg';
+    image1.alt = 'Heart Attack Burger. Photo Credit Valeria Boltneva';
   
     //append objects 
     menuItem1.appendChild(description1);
     menuItem1.appendChild(image1);
+    menuItem2.appendChild(description2);
+    menuItem2.appendChild(image2)
     menu.appendChild(menuItem1);
+    menu.appendChild(menuItem2);
     mainContainer.appendChild(menu);
 }
 
