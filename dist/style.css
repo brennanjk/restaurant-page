@@ -68,6 +68,10 @@ body {
     justify-items: center;
     align-items: center;
     gap: 1.5rem;
+    padding: 1rem;
+    background-color: #F9D342;
+    border: solid #F6BB0A 1px;
+    border-radius: 30px;
 }
 
 .menu-img {
