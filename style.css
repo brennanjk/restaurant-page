@@ -1,3 +1,10 @@
+:root {
+    --main-bg-color: #f3db00;
+    --bg-color2: #FBE551;
+    --bg-color3: #F9D342;
+    --border-color: #F6BB0A;
+}
+
 /* css reset */
 *,
 *::before,
@@ -7,16 +14,19 @@
     margin: 0;
 }
 
+html {
+    font-family: 'Patua One', cursive;
+    font-size: 17px;
+}
+
 body {
-    background-color: #f3db00;
+    background-color: var(--main-bg-color);
 }
 
 #content {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: 'Patua One', cursive;
-    font-size: 20px;
 }
 
 .header {
@@ -45,10 +55,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0rem;
-    background-color: #FBE551;
+    background-color: var(--bg-color2);
     margin: 6rem 25rem 0;
     padding: 5rem 2rem;
-    border: double #F6BB0A 1rem;
+    border: double var(--border-color) 1rem;
     border-radius: 30px;
 }
 
@@ -69,8 +79,8 @@ body {
     align-items: center;
     gap: 1.5rem;
     padding: 1rem;
-    background-color: #F9D342;
-    border: solid #F6BB0A 1px;
+    background-color: var(--bg-color3);
+    border: solid var(--border-color) 1px;
     border-radius: 30px;
 }
 
