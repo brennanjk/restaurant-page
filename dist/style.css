@@ -76,6 +76,11 @@ body {
     border-radius: 30px;
 }
 
+.menu-item > div {
+    display: grid;
+    gap: 2rem;
+}
+
 .menu-item > div > p {
     white-space: pre-line;
 }
