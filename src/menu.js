@@ -8,6 +8,13 @@ function clearContent() {
     return {mainContainer, clearContent};
 }
 
+//Create array to hold all menu items in the form of objects
+const menuItems = [
+    {name: 'Classic Cheeseburger', description: '100% Angus Beef Patty | Cheddar Cheese | Lettuce | Tomatoes | Grilled Onions\r\n$9.99', imageSrc:'./images/Classic Cheeseburger.jpg', imageAlt: 'Classic Cheesburger. Photo Credit Valeria Boltneva'},
+    {name: 'Heart Attack Burger', description: '100% Angus Beef Patty | Hard Boiled Egg | Lettuce | Tomatoes\r\n$10.99', imageSrc: './images/Classic Cheeseburger.jpg', imageAlt: 'Classic Cheesburger. Photo Credit Valeria Boltneva'},
+    {name: 'Monster Burger', description: 'Double 100% Angus Beef Patties | Double Slices of Cheddar Cheese | 4 Slices Crispy Bacon | Secret Sauce\r\n$12.99', imageSrc: './images/Monster-Burger.jpg', imageAlt: 'Monster Burger. Photo Credit Adrian Dorobantu',}
+]
+
 function createMenu() {
     const mainContainer = document.querySelector('.container');
 
@@ -15,41 +22,34 @@ function createMenu() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
 
-    //create menu item
-    const menuItem1 = document.createElement('div');
-    menuItem1.classList.add('menu-item');
-    const itemColumn1 = document.createElement('div');
-    const itemName1 = document.createElement('h3');
-    itemName1.classList.add('item-name');
-    itemName1.textContent = 'Classic Cheeseburger';
-    const itemDescription1 = document.createElement('p')
-    itemDescription1.classList.add('item-details');
-    itemDescription1.textContent = '100% Angus Beef Patty | Cheddar Cheese | Lettuce | Tomatoes | Grilled Onions\n$9.99';
-    const image1 = document.createElement('img');
-    image1.classList.add('menu-img');
-    image1.src = './images/Classic Cheeseburger.jpg';
-    image1.alt = 'Classic Cheesburger. Photo Credit Valeria Boltneva';
+    // create menu item Dom elements leveraging the object keys above in the menuItems array
+    function addItems(items) {
+        items.forEach(function(item) {
+            const menuItem = document.createElement('div');
+            menuItem.classList.add('menu-item');
+            const itemColumn = document.createElement('div');
+            const itemName = document.createElement('h3');
+            itemName.classList.add('item-name');
+            itemName.textContent = item.name;
+            const itemDescription = document.createElement('p');
+            itemDescription.classList.add('item-details');
+            itemDescription.textContent = item.description;
+            const image = document.createElement('img');
+            image.classList.add('menu-img');
+            image.src = item.imageSrc;
+            image.alt = item.imageAlt;
 
-    const menuItem2 = document.createElement('div');
-    menuItem2.classList.add('menu-item');
-    const description2 = document.createElement('div');
-    description2.classList.add('item-details');
-    description2.textContent = 'Heart Attack Burger';
-    const image2 = document.createElement('img');
-    image2.classList.add('menu-img');
-    image2.src = './images/Heart Attack Burger.jpg';
-    image2.alt = 'Heart Attack Burger. Photo Credit Valeria Boltneva';
-  
-    //append objects 
-    itemColumn1.appendChild(itemName1);
-    itemColumn1.appendChild(itemDescription1);
-    menuItem1.appendChild(itemColumn1);
-    menuItem1.appendChild(image1);
-    menuItem2.appendChild(description2);
-    menuItem2.appendChild(image2)
-    menu.appendChild(menuItem1);
-    menu.appendChild(menuItem2);
-    mainContainer.appendChild(menu);
+            //append above elements to create HTML structure and append to the menuitem to the main container
+            itemColumn.appendChild(itemName);
+            itemColumn.appendChild(itemDescription);
+            menuItem.appendChild(itemColumn);
+            menuItem.appendChild(image);
+            menu.appendChild(menuItem);
+            mainContainer.appendChild(menu);
+        })
+    }
+    //run function using menuItems array defined above
+    addItems(menuItems);
 }
 
 function loadMenu() {
