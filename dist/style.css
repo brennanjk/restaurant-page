@@ -43,10 +43,12 @@ body {
 
 .header-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10rem;
 }
 
 .header-menu > li {
+    cursor: pointer;
     list-style: none;
 }
 
