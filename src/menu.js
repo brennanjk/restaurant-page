@@ -34,7 +34,7 @@ function createMenu() {
     const image2 = document.createElement('img');
     image2.classList.add('menu-img');
     image2.src = './images/Heart Attack Burger.jpg';
-    image1.alt = 'Heart Attack Burger. Photo Credit Valeria Boltneva';
+    image2.alt = 'Heart Attack Burger. Photo Credit Valeria Boltneva';
   
     //append objects 
     menuItem1.appendChild(description1);
