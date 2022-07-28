@@ -63,14 +63,15 @@ body {
 }
 
 .menu-item {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: center;
     align-items: center;
     gap: 1.5rem;
 }
 
 .menu-img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     border-radius: 30px;
 }
