@@ -29,6 +29,20 @@ function createContacts() {
     location.appendChild(address);
     contacts.appendChild(location);
 
+    // Add contact
+    const contact = document.createElement('div');
+    const contactTitle = document.createElement('h2');
+    contactTitle.classList.add('contact-header');
+    contactTitle.textContent = 'Contact Us'
+    const contactInfo = document.createElement('p');
+    contactInfo.classList.add('contact-info');
+    contactInfo.textContent = 'moesburgers@gmail.com\r\n955-555-9555'
+
+    // append elements to create contact div structure
+    contact.appendChild(contactTitle);
+    contact.appendChild(contactInfo);
+    contacts.appendChild(contact);
+
     mainContainer.appendChild(contacts);
 }
 
