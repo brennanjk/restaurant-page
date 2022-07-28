@@ -7,11 +7,14 @@
     margin: 0;
 }
 
+body {
+    background-color: #f3db00;
+}
+
 #content {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #f3db00;
     font-family: 'Patua One', cursive;
     font-size: 20px;
 }
