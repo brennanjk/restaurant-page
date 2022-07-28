@@ -43,6 +43,20 @@ function createContacts() {
     contact.appendChild(contactInfo);
     contacts.appendChild(contact);
 
+    // Add Business Hours
+    const hoursContainer = document.createElement('div');
+    const hoursTitle = document.createElement('h2');
+    hoursTitle.classList.add('contact-header');
+    hoursTitle.textContent = 'Business Hours';
+    const hours = document.createElement('p');
+    hours.classList.add('hours');
+    hours.textContent = 'Monday | 11am-9pm\r\nTuesday | 11am-9pm\r\nWednesday | 11am-9pm\r\nThursday | 11am-9pm\r\nFriday | 10am-10pm\r\nSaturday | 10am-10pm\r\nSunday | CLOSED'
+
+    //append elements to create hours div structure
+    hoursContainer.appendChild(hoursTitle);
+    hoursContainer.appendChild(hours);
+    contacts.appendChild(hoursContainer);
+
     mainContainer.appendChild(contacts);
 }
 
