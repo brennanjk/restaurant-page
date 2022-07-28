@@ -18,9 +18,13 @@ function createMenu() {
     //create menu item
     const menuItem1 = document.createElement('div');
     menuItem1.classList.add('menu-item');
-    const description1 = document.createElement('div');
-    description1.classList.add('item-details');
-    description1.textContent = 'Classic Cheeseburger';
+    const itemColumn1 = document.createElement('div');
+    const itemName1 = document.createElement('h3');
+    itemName1.classList.add('item-name');
+    itemName1.textContent = 'Classic Cheeseburger';
+    const itemDescription1 = document.createElement('p')
+    itemDescription1.classList.add('item-details');
+    itemDescription1.textContent = '100% Angus Beef Patty | Cheddar Cheese | Lettuce | Tomatoes | Grilled Onions\n$9.99';
     const image1 = document.createElement('img');
     image1.classList.add('menu-img');
     image1.src = './images/Classic Cheeseburger.jpg';
@@ -37,7 +41,9 @@ function createMenu() {
     image2.alt = 'Heart Attack Burger. Photo Credit Valeria Boltneva';
   
     //append objects 
-    menuItem1.appendChild(description1);
+    itemColumn1.appendChild(itemName1);
+    itemColumn1.appendChild(itemDescription1);
+    menuItem1.appendChild(itemColumn1);
     menuItem1.appendChild(image1);
     menuItem2.appendChild(description2);
     menuItem2.appendChild(image2)
