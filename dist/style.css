@@ -100,3 +100,27 @@ body {
 .menu-item > div > p {
     white-space: pre-line;
 }
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contacts-container > div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 4rem;
+    background-color: var(--bg-color3);
+    border: solid var(--border-color) 1px;
+    border-radius: 30px;
+}
+
+.contacts-container > div > p {
+    white-space: pre-line;
+    text-align: center;
+    line-height: 2;
+}
+
