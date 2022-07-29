@@ -1,4 +1,5 @@
 import loadPage from './page-load.js';
+import loadHome from './home.js';
 import loadMenu from './menu.js';
 import loadContact from './contact.js';
 
@@ -7,6 +8,7 @@ function menuBottons() {
     const menu = document.querySelector('.menu');
     const contact = document.querySelector('.contact');
 
+    home.addEventListener('click', loadHome);
     menu.addEventListener('click',loadMenu);
     contact.addEventListener('click', loadContact);
 }
