@@ -10,11 +10,11 @@ function clearContent() {
 
 //Create array to hold all menu items in the form of objects
 const menuItems = [
-    {name: 'Classic Cheeseburger', description: '100% Angus Beef Patty | Cheddar Cheese | Lettuce | Tomatoes | Grilled Onions\r\n$9.99', imageSrc:'./images/Classic Cheeseburger.jpg', imageAlt: 'Classic Cheesburger. Photo Credit Valeria Boltneva'},
-    {name: 'Heart Attack Burger', description: '100% Angus Beef Patty | Fried Egg | Lettuce | Tomatoes\r\n$10.99', imageSrc: './images/Heart Attack Burger.jpg', imageAlt: 'Classic Cheesburger. Photo Credit Valeria Boltneva'},
-    {name: 'Monster Burger', description: 'Double 100% Angus Beef Patties | Double Slices of Cheddar Cheese | 4 Slices Crispy Bacon | Secret Sauce\r\n$12.99', imageSrc: './images/Monster-Burger.jpg', imageAlt: 'Monster Burger. Photo Credit Adrian Dorobantu'},
-    {name: 'French Fries', description: 'Seasoned Shoestring Fries | Dipping Sauce\r\n$4.99', imageSrc: './images/French Fries.jpg', imageAlt: 'French Fries. Photo Credit Pixzolo Photography'},
-    {name: 'Onion Rings', description: 'Beer Battered Onion Rings\r\n$5.99', imageSrc: './images/Onion Rings.jpg', imageAlt: 'Onion Rings: Photo Credit Ron Lach'},
+    {name: 'Classic Cheeseburger', description: '100% Angus Beef Patty | Cheddar Cheese | Lettuce | Tomatoes | Grilled Onions\r\n\r\n$9.99', imageSrc:'./images/Classic Cheeseburger.jpg', imageAlt: 'Classic Cheesburger. Photo Credit Valeria Boltneva'},
+    {name: 'Heart Attack Burger', description: '100% Angus Beef Patty | Fried Egg | Lettuce | Tomatoes\r\n\r\n$10.99', imageSrc: './images/Heart Attack Burger.jpg', imageAlt: 'Classic Cheesburger. Photo Credit Valeria Boltneva'},
+    {name: 'Monster Burger', description: 'Double 100% Angus Beef Patties | Double Slices of Cheddar Cheese | 4 Slices Crispy Bacon | Secret Sauce\r\n\r\n$12.99', imageSrc: './images/Monster-Burger.jpg', imageAlt: 'Monster Burger. Photo Credit Adrian Dorobantu'},
+    {name: 'French Fries', description: 'Seasoned Shoestring Fries | Dipping Sauce\r\n\r\n$4.99', imageSrc: './images/French Fries.jpg', imageAlt: 'French Fries. Photo Credit Pixzolo Photography'},
+    {name: 'Onion Rings', description: 'Beer Battered Onion Rings\r\n\r\n$5.99', imageSrc: './images/Onion Rings.jpg', imageAlt: 'Onion Rings: Photo Credit Ron Lach'},
 ]
 
 function createMenu() {
