@@ -145,3 +145,12 @@ body {
     line-height: 2;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 3rem 0 1rem;
+    gap: .5rem;
+    font-size: .95rem;
+}
