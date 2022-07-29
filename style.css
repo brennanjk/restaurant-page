@@ -33,8 +33,9 @@ body {
     display: grid;
     grid-template-rows: 2fr 1fr;
     align-items: center;
-    margin-top: 2rem;
+    padding-top: 2rem;
     gap: 1rem;
+    background: linear-gradient(#f48200, var(--main-bg-color));
 }
 
 .rest-name {
