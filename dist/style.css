@@ -115,6 +115,7 @@ body {
 
 .menu-item > div {
     display: grid;
+    justify-self: start;
     gap: 2rem;
 }
 
@@ -153,4 +154,25 @@ body {
     padding: 3rem 0 1rem;
     gap: .5rem;
     font-size: .95rem;
+}
+
+@media (max-width: 1550px) {
+    html {
+        font-size: 15px;
+    }
+    .container {
+        margin: 6rem 20rem 0;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        margin: 6rem 15rem 0;
+    }
+    .menu {
+        gap: 5rem;
+    }
+    .menu-item {
+        grid-template-columns: 1fr;
+    }
 }
