@@ -176,3 +176,32 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 985px) {
+    html {
+        font-size: 13px;
+    }
+    .container {
+        margin: 6rem 7rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+    .rest-name {
+        font-size: 3rem;
+    }
+    .header-menu {
+        gap: 5rem;
+    }
+    .container {
+        margin: 6rem 2rem 0;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .container > img {
+        max-width: 100%;
+    }
+}
