@@ -61,11 +61,32 @@ function createContainer() {
     return main;
 }
 
+function createFooter() {
+    // create root footer div
+    const footer = document.createElement('div');
+    footer.classList.add('footer');
+
+    // create text div
+    const userTag = document.createElement('div');
+    userTag.innerHTML = '&copy brennanjk'
+
+    // create image tag
+    const image = document.createElement('img');
+    image.src = './images/github-icon.svg';
+
+    // append footer items together
+    footer.appendChild(userTag);
+    footer.appendChild(image);
+
+    return footer;
+}
+
 function pageLoad() {
     const element = document.getElementById('content');
 
     element.append(createHeader());
     element.appendChild(createContainer());
+    element.appendChild(createFooter());
 }
 
 export default pageLoad;
