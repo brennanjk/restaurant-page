@@ -34,6 +34,7 @@ body {
     grid-template-rows: 2fr 1fr;
     align-items: center;
     margin-top: 2rem;
+    gap: 1rem;
 }
 
 .rest-name {
@@ -50,6 +51,24 @@ body {
 .header-menu > li {
     cursor: pointer;
     list-style: none;
+}
+
+.header-item {
+    font-weight: 100;
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    background-color: var(--bg-color2);
+    border: solid var(--border-color) 3px;
+    border-radius: 25px;
+}
+
+.header-item:hover {
+    filter: brightness(105%);
+    transform: scale(105%);
+}
+
+.header-item:active {
+    background-color: var(--border-color);
 }
 
 .container {
