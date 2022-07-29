@@ -2,6 +2,7 @@
     --main-bg-color: #f3db00;
     --bg-color2: #FBE551;
     --bg-color3: #F9D342;
+    --bg-color4: #F48200;
     --border-color: #F6BB0A;
 }
 
@@ -35,7 +36,7 @@ body {
     align-items: center;
     padding-top: 2rem;
     gap: 1rem;
-    background: linear-gradient(#f48200, var(--main-bg-color));
+    background: linear-gradient(var(--bg-color4), var(--main-bg-color));
 }
 
 .rest-name {
